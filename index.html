@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" ng-app="chaiwallaApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Chaiwala</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <style>
+      img {
+        display: block;
+        margin: auto;
+      }
+      .color1 {
+        background-color: #42392C;
+      }
+    </style>
+  </head>
+  <body>
+    <div layout="column">
+      <div class="posabs" flex="20">
+        <footer></footer>
+      </div>
+      <div flex="60" class="color1">
+        <div layout="column" layout-xs="column" layout-sm="column">
+          <div flex="30" class="color1">
+          </div>
+          <div flex="40" class="color1">
+            <div layout="column">
+              <div flex="25">
+                <img ng-src="images/chaiwalla_img.png" class="margin:auto"></img>
+              </div>
+              <div flex="25">
+                <img ng-src="images/chaiwalla1.png" class="margin:auto"></img>
+              </div>
+              <div flex="25">
+                <img ng-src="images/chaiwalla2.png" class="margin:auto"></img>
+              </div>
+              <div flex="25">
+                <img ng-src="images/chaiwalla3.png" class="margin:auto"></img>
+              </div>
+            </div>
+          </div>
+          <div flex="30" class="color1">
+          </div>
+        </div>
+      </div>
+      <div class="footer" flex="20">
+        <footer></footer>
+      </div>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="app.module.js"></script>
+    <script src="footer/footer.module.js"></script>
+    <script src="footer/footer.component.js"></script>
+  </body>
+</html>
