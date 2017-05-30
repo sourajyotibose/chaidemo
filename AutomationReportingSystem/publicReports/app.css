@@ -1,0 +1,26 @@
+.color-green {
+  color: green;
+}
+
+.color-red {
+  color: red;
+}
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-36 { font-size: 36px; }
+
+.ul {
+  list-style-type: none;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 

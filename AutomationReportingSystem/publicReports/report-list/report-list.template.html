@@ -1,0 +1,99 @@
+<div class="container">
+  <div layout="column">
+    <div layout="row">
+      <div flex>
+        <h1>Reports</h1>
+      </div>
+      <div flex>
+        <div layout="row">
+          <md-datepicker ng-model="$ctrl.date" md-placeholder="Enter date"></md-datepicker>
+          <md-button class="md-raised md-primary" ng-click="$ctrl.searchButton()">Search</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <table class="table table-bordered table-hover">
+        <tr>
+          <th>UI Url</th><th><a href="{{$ctrl.envDetails[0].uiurl}}">{{$ctrl.envDetails[0].uiurl}}</th>
+        </tr>
+        <tr>
+          <th>Host IP</th><th>{{$ctrl.envDetails[0].hostIP}}</th>
+        </tr>
+        <tr>
+          <th>Release</th><th>{{$ctrl.envDetails[0].release}}</th>
+        </tr>
+        <tr>
+          <th>Build Date</th><th>{{$ctrl.report[0].buildDate}}</th>
+        </tr>
+        <tr></tr>
+      </table>
+    </div>
+    <div>
+      <hr>
+    </div>
+    <div>
+      <div layout="row" layout-align="space-between center">
+        <span>Type of Execution:</span>
+        <span>{{$ctrl.typeOfExecution}}</span>
+        <md-select ng-model="$ctrl.typeOfExecution" placeholder="Type" class="md-no-underline" ng-change="$ctrl.currentReportUpdate()">
+          <md-option ng-value="type.name" ng-repeat="type in $ctrl.types">{{type.name}}</md-option>
+        </md-select>
+      </div>
+      <table class="table table-bordered table-hover data-filter-control="true" " >
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Test Screen ID</th>
+            <th>Test Case ID</th>
+            <th>Description</th>
+            <th data-filter-control="select">Result</th>
+            <th>JIRAs</th>
+            <th>Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="result in $ctrl.report">
+            <th>{{$index + 1}}</th>
+            <th>{{result.testScreenID}}</th>
+            <th><a href="#!/reports/{{result._id}}">{{result.testCaseID}}</a>
+            </th>
+            <th>{{result.testDescription}}</th>
+            <th><!-- <span ng-class="{
+                'color-red': result.result === 'Failed',
+                'color-green': result.result === 'Passed'}">{{result.result}}</span> -->
+                <md-select ng-class="{
+                    'color-red': resultOfExecution.name === 'Failed',
+                    'color-green': resultOfExecution.name === 'Passed'}" ng-model="result.result" placeholder="Type" class="md-no-underline" ng-change="$ctrl.updateResult(result.result,result._id)">
+                  <md-option  ng-value="resultOfExecution.name" ng-repeat="resultOfExecution in $ctrl.resultOfExecutaions">{{resultOfExecution.name}}</md-option>
+                </md-select>
+              </th>
+            <th>
+              <span ng-hide="editing">
+                <ul>
+                  <li ng-repeat="jira in result.jiras">
+                    <a href="!/apple">{{jira}}</a>
+                  </li>
+                </ul>
+              </span>
+              <a ng-click="$ctrl.saveJIRA($event,JiraNumber,result._id)" href="">
+                <i class="material-icons md-18 md-dark">add</i>
+              </a>
+            </th>
+            <th>
+              <span ng-hide="editingComment">
+                <ul>
+                  <li ng-repeat="comment in result.comment">
+                    <a href="!/apple">{{comment}}</a>
+                  </li>
+                </ul>
+              </span>
+              <a ng-click="$ctrl.saveComment($event,Comment,result._id)" href="">
+                <i class="material-icons md-18 md-dark">insert comment</i>
+              </a>
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

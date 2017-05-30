@@ -1,0 +1,34 @@
+<div>
+  <div>
+    <h1>{{$ctrl.individualTestCase.testCaseID}}</h1>
+  </div>
+  <div>
+    <h2>Status: <span ng-class="{
+        'color-red': $ctrl.individualTestCase.result === 'Failed',
+        'color-green': $ctrl.individualTestCase.result === 'Passed'}">{{$ctrl.individualTestCase.result}}</span></h2>
+    <h3>Description: <span>{{$ctrl.individualTestCase.testDescription}}</span></h3>
+    <p>
+      {{$ctrl.individualTestCase.finalLog}}
+    </p>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Key Word</th>
+          <th>Field Name</th>
+          <th>Field Definition</th>
+          <th>Field Data</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="step in $ctrl.individualTestCase.steps">
+          <th scope="row">{{$index + 1}}</th>
+          <th>{{step.keyWord}}</th>
+          <th>{{step.fieldName}}</th>
+          <th>{{step.fieldDefinition}}</th>
+          <th>{{step.fieldData}}</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

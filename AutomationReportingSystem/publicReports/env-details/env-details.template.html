@@ -1,0 +1,34 @@
+  <div class="container">
+        <v-accordion class="vAccordion--default">
+          <v-pane ng-repeat="i in $ctrl.releases">
+            <v-pane-header>
+              Release {{i}}
+            </v-pane-header>
+            <v-pane-content>
+                <div layout="column" layout-align="center" ng-style="{'width': '100%'}">
+                  <div class='md-padding' layout="row" layout-align="center" flex-offset-sm="0" flex-offset-md="0" flex-offset-lg="0" flex-offset-gt-lg="0" layout-wrap>
+                    <md-card class="md-whiteframe-9dp"
+                    ng-style="{'width': '450px','height': '450px'}"
+                    ng-repeat="envs in $ctrl.environments"
+                    layout-padding
+                    ng-show = "envs.release == '{{i}}'">
+                      <md-card-title>
+                        <md-card-title-text>
+                          <span class="md-headline">{{envs.envName}}</span>
+                        </md-card-title-text>
+                      </md-card-title>
+                      <md-card-content>
+                        <ul>
+                          <li>Servicing</li>
+                          <li>Origination</li>
+                        </ul>
+                      </md-card-content>
+                      <md-card-actions layout="row" layout-align="end center">
+                        <a href="#!/envs/{{envs.envName}}">Current Report</a>
+                      </md-card-actions>
+                    </md-card>
+                  </div>
+                </div>
+          </v-pane>
+        </v-accordion>
+</div>
