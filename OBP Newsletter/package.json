@@ -1,0 +1,28 @@
+{
+  "name": "newsletter",
+  "version": "1.0.0",
+  "description": "newsletter OBP",
+  "main": "app.js",
+  "dependencies": {
+    "angular": "1.5.6",
+    "angular-resource": "1.5.6",
+    "angular-route": "1.5.6",
+    "body-parser": "^1.14.2",
+    "bootstrap": "^4.0.0-alpha.6",
+    "express": "^4.13.3",
+    "material-design-icons": "^3.0.1",
+    "mongodb": "^2.1.7",
+    "mongoose": "^4.4.8",
+    "nodemon": "^1.11.0",
+    "reload": "^1.1.2",
+    "v-accordion": "^1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sourajyoti Bose",
+  "license": "ISC"
+}

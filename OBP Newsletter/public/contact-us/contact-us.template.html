@@ -1,0 +1,76 @@
+<div class="container">
+  <div layout="column">
+    <div layout="row">
+      <div flex>
+        <h2>
+          Want to drop us a line?
+        </h2>
+      </div>
+      <div flex>
+        <h2>
+          You can also contact us
+        </h2>
+      </div>
+    </div>
+    <div>
+      <hr>
+    </div>
+    <div layout="row">
+      <div flex="60">
+        <form>
+          <div layout="column">
+            <div layout="row">
+              <md-input-container>
+                <label>Name</label>
+                <input required ng-model="$ctrl.name">
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container>
+                <label>Email</label>
+                <input required ng-model="$ctrl.email" type="email">
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container>
+                <label>Phone Number</label>
+                <input ng-model="$ctrl.phoneNumber">
+              </md-input-container>
+            </div>
+            <div layout="row">
+              <md-input-container>
+                <label>Message</label>
+                <textarea required ng-model="$ctrl.comments" md-maxlength="150" rows="5" md-select-on-focus></textarea>
+              </md-input-container>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div flex>
+        <div layout="column">
+          <md-input-container>
+            <div layout="row">
+              <div flex>
+                <i class="material-icons md-18 md-dark">mail</i>
+              </div>
+              <div flex>
+                <label>Enter obp_newsletter mail id</label>
+              </div>
+            </div>
+          </md-input-container>
+          <md-input-container>
+            <div layout="row">
+              <div flex>
+                <i class="material-icons md-18 md-dark">place</i>
+              </div>
+              <div flex>
+                <label>Enter location of office</label>
+              </div>
+            </div>
+          </md-input-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <md-button class="md-raised md-primary">Send</button>
+</div>

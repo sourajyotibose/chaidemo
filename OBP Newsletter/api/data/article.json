@@ -1,0 +1,193 @@
+[
+  {
+    "title": "Article 1",
+    "author": [
+      "Sourajyoti Bose"
+    ],
+    "editedBy": null,
+    "uploadBy": "Yohan Matthew",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category1",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "yes",
+    "edition": "60",
+    "uploadDate": "2017-01-23",
+    "editedDate": null
+  },
+  {
+    "title": "Article 2",
+    "author": [
+      "Sourajyoti Bose",
+      "Yohan Matthew"
+    ],
+    "editedBy": null,
+    "uploadBy": "Anuya Saddadekar",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category3",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "yes",
+    "edition": "60",
+    "uploadDate": "2017-03-23",
+    "editedDate": null
+  },
+  {
+    "title": "Article 3",
+    "author": [
+      "Yohan Matthew",
+      "Sourajyoti Bose",
+      "Anuya Saddadekar"
+    ],
+    "editedBy": null,
+    "uploadBy": "Satyarth Jha",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category1",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "yes",
+    "edition": "60",
+    "uploadDate": "2017-05-24",
+    "editedDate": null
+  },
+  {
+    "title": "Article 4",
+    "author": [
+      "Yohan Matthew",
+      "Sourajyoti Bose",
+      "Anuya Saddadekar"
+    ],
+    "editedBy": null,
+    "uploadBy": "Satyarth Jha",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category1",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "no",
+    "edition": "60",
+    "uploadDate": "2017-05-01",
+    "editedDate": null
+  },
+  {
+    "title": "Article 5",
+    "author": [
+      "Yohan Matthew",
+      "Sourajyoti Bose",
+      "Anuya Saddadekar"
+    ],
+    "editedBy": null,
+    "uploadBy": "Satyarth Jha",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category1",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "no",
+    "edition": "60",
+    "uploadDate": "2017-05-12",
+    "editedDate": null
+  },
+  {
+    "title": "Article 6",
+    "author": [
+      "Yohan Matthew",
+      "Anuya Saddadekar"
+    ],
+    "editedBy": null,
+    "uploadBy": "Satyarth Jha",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category1",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "yes",
+    "edition": "60",
+    "uploadDate": "2017-05-24",
+    "editedDate": null
+  },
+  {
+    "title": "Article 7",
+    "author": [
+      "Yohan Matthew",
+      "Anuya Saddadekar"
+    ],
+    "editedBy": null,
+    "uploadBy": "Satyarth Jha",
+    "likes": 0,
+    "comments": [],
+    "images": [],
+    "category": "Category1",
+    "body": [
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      },
+      {
+        "subhead": "Header 1",
+        "text": "Lorem Ipsum bla bla bla blas blas"
+      }
+    ],
+    "edited": "no",
+    "edition": "60",
+    "uploadDate": "2017-05-12",
+    "editedDate": null
+  }
+]

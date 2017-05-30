@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en" ng-app="newsletterApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Automation Reports</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css" type="text/css"/>
+    <link href="node_modules/v-accordion/dist/v-accordion.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="app.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <script src="node_modules/v-accordion/dist/v-accordion.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="core/core.module.js"></script>
+    <script src="core/article/article.module.js"></script>
+    <script src="core/article/article.factory.js"></script>
+    <script src="home-page/home-page.module.js"></script>
+    <script src="home-page/home-page.component.js"></script>
+    <script src="article-list/article-list.module.js"></script>
+    <script src="article-list/article-list.component.js"></script>
+    <script src="archive-pages/archive-pages.module.js"></script>
+    <script src="archive-pages/archive-pages.component.js"></script>
+    <script src="contact-us/contact-us.module.js"></script>
+    <script src="contact-us/contact-us.component.js"></script>
+  </head>
+  <body>
+      <div layout="column">
+        <div>
+          <md-toolbar>
+              <div class="md-toolbar-tools" layout="row" layout-align="center center">
+                <a href="#!/">
+                  <div>
+                    <h2 class="md-flex">OBP Newsletter</h2>
+                  </div>
+                </a>
+              </div>
+          </md-toolbar>
+        </div>
+          <div>
+            <home-page></home-page>
+          </div>
+          <div class="view-container">
+            <div ng-view class="view-frame"></div>
+          </div>
+        <!-- <div ng-view class="view-frame"></div> -->
+      </div>
+  </body>
+</html>
